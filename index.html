@@ -4,32 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="left-side">
-        <h1><img src="img/odin-lined.png" alt="logo">ODIN</h1>
+    <div class="container">
+        <div class="left-section">
+            <div class="banner">
+                <img src="/img/odin-lined.png" alt="The Odin Project Logo">
+                <h1 class="title">Odin</h1>
+            </div>
+            <div class="footer">
+                <p class="credit">
+                    Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+                </p>   
+        </div>
+        <div class="right-section">
+            <div class="copy text">
+                <p>
+                    This is not areal online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to</p>
+            </div>
+            <form action="" method="post">
+                <div class="form-group">
+                    <legend class="text">Let's do this!</legend>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <p>
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" id="fname" name="fname" placeholder="Thor" required>
+                            </p>
+                            <p>
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" required>
+                            </p>
+                            <p>
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" required>
+                            </p>
+                        </div>
+                        <div class="form-col">
+                            <p>
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" id="lname" name="lname" placeholder="Odinson" required>
+                            </p>
+                            <p>
+                                <label for="cpassword">CONFIRM PASSWORD</label>
+                                <input type="password" id="cpassword" name="cpassword" required>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn"Account</button>
+            </form>
+            <p>
+                Already have an account? <a href="#">Log in</a>
+            </p>
+        </div>
     </div>
-    <div class="right-side">
-        <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started</h2>
-        <h2>You know you want to</h2>
-        <form action="#" method="get">
-            <h2>Let's do this!</h2>
-            <label for="fname">FIRST NAME</label>
-            <input type="text" name="fname" id="fname">
-            <label for="lname">LAST NAME</label>
-            <input type="text" name="lname" id="lname">
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
-            <label for="phone-no">PHONE NUMBER</label>
-            <input type="number" name="phone-no" id="phone-no">
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-password" id="confirm-password">
-            <button type="submit">Create Account</button>
-            <p class="login-link">Already have  an account? <a href="#">Log In</a></p> 
-        </form>
-    </div>
-   
 </body>
 </html>
